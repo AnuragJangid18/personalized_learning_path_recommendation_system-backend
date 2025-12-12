@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
 
-// Use environment variable when available (Vercel sets this in project settings)
-const DEFAULT_URI = 'mongodb+srv://personalized_learning_path_recommendation_system:plprs123@anuragapi.lqyfynk.mongodb.net/?appName=AnuragAPI';
-
 /**
  * Connect to MongoDB Atlas with a cached connection for serverless environments.
  * - Uses process.env.MONGO_URI when provided (recommended for production).
