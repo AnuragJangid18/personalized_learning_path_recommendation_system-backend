@@ -22,16 +22,16 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // CORS configuration for production and development
-const allowedOrigins = process.env.CORS_ORIGIN 
+const allowedOrigins = process.env.CORS_ORIGIN
   ? process.env.CORS_ORIGIN.split(',').map(s => s.trim()).filter(Boolean)
-  : ['http://localhost:5173', 'http://localhost:3000'];
+  : ['http://localhost:5173', 'http://localhost:3000', 'https://personalized-learning-path-x8jx.onrender.com'];
 
 app.use(
   cors({
     origin: function (origin, callback) {
       // Allow requests with no origin (like mobile apps or curl requests)
       if (!origin) return callback(null, true);
-      
+
       if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== 'production') {
         callback(null, true);
       } else {
@@ -608,14 +608,14 @@ app.get('/api/health', async (req, res) => {
     // Check database connection
     const dbStatus = mongoose.connection.readyState === 1 ? 'connected' : 'disconnected';
     const dbState = mongoose.connection.readyState;
-    
+
     // Get some basic stats
     const studentCount = await Student.countDocuments();
     const progressCount = await Progress.countDocuments();
-    
+
     logger.info('Health check:', { dbStatus, studentCount, progressCount });
-    
-    res.json({ 
+
+    res.json({
       ok: true,
       status: 'healthy',
       timestamp: new Date().toISOString(),
@@ -629,10 +629,10 @@ app.get('/api/health', async (req, res) => {
     });
   } catch (error) {
     logger.error('Health check error:', error);
-    res.status(503).json({ 
-      ok: false, 
+    res.status(503).json({
+      ok: false,
       status: 'unhealthy',
-      error: error.message 
+      error: error.message
     });
   }
 });
@@ -816,14 +816,14 @@ app.delete('/api/checkpoint/:id', authMiddleware, async (req, res) => {
 
 app.post('/api/profile', async (req, res) => {
   const { name, level, subject, style, goal, id } = req.body || {};
-  
+
   // Validate required fields
   if (!name?.trim()) return res.status(400).json({ error: 'name is required' });
-  
+
   // Validate enum values
   const validLevels = ['Beginner', 'Intermediate', 'Advanced'];
   const validSubjects = ['artificial_intelligence', 'computer_science', 'mathematics'];
-  
+
   if (level && !validLevels.includes(level)) {
     return res.status(400).json({ error: 'Invalid level' });
   }
@@ -864,27 +864,27 @@ app.post('/api/profile', async (req, res) => {
 app.get('/api/student/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    
+
     // Validate ID format
     if (!mongoose.Types.ObjectId.isValid(id)) {
       logger.warn('Get student: invalid ID format', id);
       return res.status(400).json({ error: 'Invalid student ID format' });
     }
-    
+
     const doc = await Student.findById(id);
     if (!doc) {
       logger.warn('Get student: student not found', id);
       return res.status(404).json({ error: 'Student not found' });
     }
-    
+
     logger.info('Student retrieved:', id);
-    return res.json({ 
-      id: doc._id.toString(), 
-      name: doc.name, 
-      level: doc.level, 
-      subject: doc.subject, 
-      style: doc.style, 
-      goal: doc.goal 
+    return res.json({
+      id: doc._id.toString(),
+      name: doc.name,
+      level: doc.level,
+      subject: doc.subject,
+      style: doc.style,
+      goal: doc.goal
     });
   } catch (e) {
     logger.error('get student error', e);
@@ -895,13 +895,13 @@ app.get('/api/student/:id', async (req, res) => {
 // RL-based recommendation system
 function calculateLessonScore(lesson, student, progress, allLessons) {
   let score = 0;
-  
+
   // Early return for invalid inputs
   if (!lesson || !student || !progress) return -100;
-  
+
   // 1. Performance-based adjustment (40% weight)
   const accuracy = progress.interactions > 0 ? Math.min(1, progress.correct / progress.interactions) : 0.5;
-  
+
   if (accuracy > 0.8) {
     // High performer - suggest harder content
     score += lesson.difficulty * 10;
@@ -912,46 +912,46 @@ function calculateLessonScore(lesson, student, progress, allLessons) {
     // Average - balanced difficulty
     score += (3 - Math.abs(lesson.difficulty - 3)) * 10;
   }
-  
+
   // 2. Learning style match (20% weight)
-  const hasVisualContent = lesson.topics?.some(t => 
-    t.toLowerCase().includes('vision') || 
+  const hasVisualContent = lesson.topics?.some(t =>
+    t.toLowerCase().includes('vision') ||
     t.toLowerCase().includes('image') ||
     t.toLowerCase().includes('visualization')
   );
-  const hasTheoreticalContent = lesson.topics?.some(t => 
-    t.toLowerCase().includes('theory') || 
+  const hasTheoreticalContent = lesson.topics?.some(t =>
+    t.toLowerCase().includes('theory') ||
     t.toLowerCase().includes('math') ||
     t.toLowerCase().includes('algorithm')
   );
   const hasPracticalContent = lesson.estimatedEffort === 'high' || lesson.duration.includes('4 weeks');
-  
+
   if (student.style === 'visual' && hasVisualContent) score += 20;
   if (student.style === 'theoretical' && hasTheoreticalContent) score += 20;
   if (student.style === 'hands-on' && hasPracticalContent) score += 20;
   if (student.style === 'auditory') score += 10; // Neutral for all
-  
+
   // 3. Goal alignment (20% weight)
-  const isCareerFocused = lesson.topics?.some(t => 
-    t.toLowerCase().includes('engineering') || 
+  const isCareerFocused = lesson.topics?.some(t =>
+    t.toLowerCase().includes('engineering') ||
     t.toLowerCase().includes('development') ||
     t.toLowerCase().includes('system')
   );
-  const isResearchFocused = lesson.topics?.some(t => 
-    t.toLowerCase().includes('advanced') || 
+  const isResearchFocused = lesson.topics?.some(t =>
+    t.toLowerCase().includes('advanced') ||
     t.toLowerCase().includes('theory') ||
     t.toLowerCase().includes('optimization')
   );
-  
+
   if (student.goal === 'Career' && isCareerFocused) score += 20;
   if (student.goal === 'Research' && isResearchFocused) score += 20;
   if (student.goal === 'Learn') score += 10; // Balanced
-  
+
   // 4. Engagement optimization (10% weight)
   const totalLessons = allLessons.length;
   const completedCount = progress.completed.length;
   const completionRate = completedCount / totalLessons;
-  
+
   if (completionRate < 0.3 && lesson.estimatedEffort === 'low') {
     // Early stage - suggest easier lessons to build momentum
     score += 10;
@@ -959,12 +959,12 @@ function calculateLessonScore(lesson, student, progress, allLessons) {
     // Advanced stage - suggest challenging lessons
     score += 10;
   }
-  
+
   // 5. Prerequisite satisfaction (10% weight)
   const prereqsMet = lesson.prerequisites.every(p => progress.completed.includes(p));
   if (prereqsMet) score += 10;
   else score -= 50; // Heavy penalty for unmet prerequisites
-  
+
   return score;
 }
 
@@ -981,51 +981,51 @@ app.get('/api/learning-path/recommended', async (req, res) => {
   try {
     const { studentId } = req.query;
     if (!studentId) return res.status(400).json({ error: 'studentId required' });
-    
+
     // Validate ObjectId format
     if (!mongoose.Types.ObjectId.isValid(studentId)) {
       return res.status(400).json({ error: 'Invalid studentId format' });
     }
-    
+
     const student = await Student.findById(studentId);
     if (!student) return res.status(404).json({ error: 'Student not found' });
-    
+
     let progress = await Progress.findOne({ studentId });
     // Create progress if doesn't exist
     if (!progress) {
       progress = await Progress.create({ studentId, completed: [], interactions: 0, correct: 0 });
     }
-    
+
     const subject = student.subject || 'artificial_intelligence';
     const level = student.level || 'Intermediate';
-    
+
     // Get all lessons for the subject
     const allLessons = courseData[subject] || [];
     const filtered = allLessons.filter(byLevel(level));
-    
+
     // Calculate RL-based scores for each lesson
     const scoredLessons = filtered.map(lesson => ({
       ...lesson,
       rlScore: calculateLessonScore(lesson, student, progress, allLessons),
       isCompleted: progress.completed.includes(lesson.name)
     }));
-    
+
     // Separate completed and uncompleted
     const uncompleted = scoredLessons.filter(l => !l.isCompleted);
     const completed = scoredLessons.filter(l => l.isCompleted);
-    
+
     // Sort uncompleted by RL score (highest first)
     uncompleted.sort((a, b) => b.rlScore - a.rlScore);
-    
+
     // Apply topological sort to respect prerequisites within score groups
     const topSuggestions = uncompleted.slice(0, 5); // Top 5 by score
     const remaining = uncompleted.slice(5);
-    
+
     const orderedTop = topoSort(topSuggestions);
     const orderedRemaining = topoSort(remaining);
-    
+
     const recommendedOrder = [...orderedTop, ...orderedRemaining, ...completed];
-    
+
     res.json({
       subject,
       level,
@@ -1048,17 +1048,17 @@ app.get('/api/lesson/:courseName', (req, res) => {
   try {
     const key = decodeURIComponent(req.params.courseName);
     logger.info('Lesson request for:', key);
-    
+
     const lesson = lessonBank[key] || buildDefaultLesson(key);
-    
+
     // Verify course exists in course data
     const allCourses = Object.values(courseData).flat();
     const courseExists = allCourses.some(c => c.name === key);
-    
+
     if (!courseExists) {
       logger.warn('Lesson requested for non-existent course:', key);
     }
-    
+
     res.json(lesson);
   } catch (error) {
     logger.error('Lesson fetch error:', error);
@@ -1070,15 +1070,15 @@ app.get('/api/quiz/:courseName', (req, res) => {
   try {
     const key = decodeURIComponent(req.params.courseName);
     logger.info('Quiz request for:', key);
-    
+
     const fromLesson = lessonBank[key]?.quiz;
     const quiz = fromLesson || quizBank[key] || null;
-    
+
     if (!quiz) {
       logger.warn('No quiz available for course:', key);
       return res.status(404).json({ error: 'Quiz not found', courseName: key });
     }
-    
+
     res.json(quiz);
   } catch (error) {
     logger.error('Quiz fetch error:', error);
@@ -1089,7 +1089,7 @@ app.get('/api/quiz/:courseName', (req, res) => {
 app.post('/api/progress', async (req, res) => {
   try {
     const { studentId, courseName, answered, wasCorrect } = req.body || {};
-    
+
     // Validate studentId
     if (!studentId) {
       logger.warn('Progress update: missing studentId');
@@ -1121,11 +1121,11 @@ app.post('/api/progress', async (req, res) => {
         }
       }
     }
-    
+
     // Validate numeric inputs
     const answeredNum = Number(answered) || 0;
     const wasCorrectNum = Number(wasCorrect) || 0;
-    
+
     if (answeredNum > 0) {
       doc.interactions += Math.max(0, Math.min(answeredNum, 100)); // Cap at 100
     }
@@ -1141,7 +1141,7 @@ app.post('/api/progress', async (req, res) => {
 
     await doc.save();
     const stats = computeStats(doc);
-    
+
     logger.info('Progress updated successfully', {
       studentId,
       courseName,
@@ -1150,7 +1150,7 @@ app.post('/api/progress', async (req, res) => {
       correct: doc.correct,
       accuracy: stats.accuracy
     });
-    
+
     res.json({ ok: true, completed: doc.completed, stats });
   } catch (error) {
     logger.error('Progress update error:', error);
@@ -1161,22 +1161,22 @@ app.post('/api/progress', async (req, res) => {
 app.get('/api/progress/:studentId', async (req, res) => {
   try {
     const { studentId } = req.params;
-    
+
     // Validate studentId format
     if (!mongoose.Types.ObjectId.isValid(studentId)) {
       return res.status(400).json({ error: 'Invalid studentId format' });
     }
-    
+
     let doc = await Progress.findOne({ studentId });
-    
+
     // Create progress document if it doesn't exist
     if (!doc) {
       logger.info('Progress not found, creating new document for studentId:', studentId);
-      doc = await Progress.create({ 
-        studentId, 
-        completed: [], 
-        interactions: 0, 
-        correct: 0 
+      doc = await Progress.create({
+        studentId,
+        completed: [],
+        interactions: 0,
+        correct: 0
       });
     }
 
@@ -1202,40 +1202,40 @@ app.get('/api/progress/:studentId', async (req, res) => {
 app.post('/api/progress/reset', async (req, res) => {
   try {
     const { studentId } = req.body;
-    
+
     logger.info('Reset progress request received for studentId:', studentId);
-    
+
     // Check database connection
     if (mongoose.connection.readyState !== 1) {
       logger.error('Database not connected. Ready state:', mongoose.connection.readyState);
-      return res.status(503).json({ 
-        error: 'Database not available', 
-        details: 'MongoDB connection is not ready' 
+      return res.status(503).json({
+        error: 'Database not available',
+        details: 'MongoDB connection is not ready'
       });
     }
-    
+
     if (!studentId) {
       logger.warn('Reset progress: studentId missing');
       return res.status(400).json({ error: 'studentId required' });
     }
-    
+
     if (!mongoose.Types.ObjectId.isValid(studentId)) {
       logger.warn('Reset progress: invalid studentId format', studentId);
       return res.status(400).json({ error: 'Invalid studentId format', receivedId: studentId });
     }
-    
+
     const doc = await Progress.findOne({ studentId });
     if (!doc) {
       // Create fresh progress if it doesn't exist
       logger.info('Reset progress: creating fresh progress document for', studentId);
-      const newProgress = await Progress.create({ 
-        studentId, 
-        completed: [], 
-        interactions: 0, 
-        correct: 0 
+      const newProgress = await Progress.create({
+        studentId,
+        completed: [],
+        interactions: 0,
+        correct: 0
       });
-      return res.json({ 
-        ok: true, 
+      return res.json({
+        ok: true,
         message: 'Progress created fresh',
         progress: {
           completed: newProgress.completed,
@@ -1244,29 +1244,29 @@ app.post('/api/progress/reset', async (req, res) => {
         }
       });
     }
-    
+
     // Log before reset
     logger.info('Reset progress: before reset', {
       completed: doc.completed.length,
       interactions: doc.interactions,
       correct: doc.correct
     });
-    
+
     // Reset all progress fields
     doc.completed = [];
     doc.interactions = 0;
     doc.correct = 0;
     await doc.save();
-    
+
     // Log after reset
     logger.info('Reset progress: after reset', {
       completed: doc.completed.length,
       interactions: doc.interactions,
       correct: doc.correct
     });
-    
-    res.json({ 
-      ok: true, 
+
+    res.json({
+      ok: true,
       message: 'Progress reset successfully',
       progress: {
         completed: doc.completed,
@@ -1283,22 +1283,22 @@ app.post('/api/progress/reset', async (req, res) => {
 app.get('/api/dashboard/:studentId', async (req, res) => {
   try {
     const { studentId } = req.params;
-    
+
     // Validate studentId format
     if (!mongoose.Types.ObjectId.isValid(studentId)) {
       return res.status(400).json({ error: 'Invalid studentId format' });
     }
-    
+
     let progress = await Progress.findOne({ studentId });
-    
+
     // Create progress if it doesn't exist
     if (!progress) {
       logger.info('Dashboard: creating fresh progress for studentId:', studentId);
-      progress = await Progress.create({ 
-        studentId, 
-        completed: [], 
-        interactions: 0, 
-        correct: 0 
+      progress = await Progress.create({
+        studentId,
+        completed: [],
+        interactions: 0,
+        correct: 0
       });
     }
 
@@ -1313,7 +1313,7 @@ app.get('/api/dashboard/:studentId', async (req, res) => {
     res.json({
       stats,
       series: {
-        weeks: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6'],
+        weeks: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
         progress: progressSeries,
         performance: performanceSeries
       },
@@ -1328,25 +1328,25 @@ app.get('/api/dashboard/:studentId', async (req, res) => {
 app.post('/api/feedback', async (req, res) => {
   try {
     const { studentId, difficulty, engagement, comments } = req.body || {};
-    
+
     // Validate studentId if provided
     if (studentId && !mongoose.Types.ObjectId.isValid(studentId)) {
       logger.warn('Feedback: invalid studentId format', studentId);
       return res.status(400).json({ error: 'Invalid studentId format' });
     }
-    
+
     // Validate numeric fields
     if (difficulty !== undefined && (typeof difficulty !== 'number' || difficulty < 1 || difficulty > 5)) {
       return res.status(400).json({ error: 'Difficulty must be a number between 1 and 5' });
     }
-    
+
     if (engagement !== undefined && (typeof engagement !== 'number' || engagement < 1 || engagement > 5)) {
       return res.status(400).json({ error: 'Engagement must be a number between 1 and 5' });
     }
-    
+
     const saved = await Feedback.create({ studentId, difficulty, engagement, comments });
     logger.info('Feedback saved:', saved._id.toString());
-    
+
     res.json({ ok: true, id: saved._id.toString() });
   } catch (error) {
     logger.error('Feedback save error:', error);
