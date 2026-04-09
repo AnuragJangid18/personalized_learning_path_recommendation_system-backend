@@ -349,3 +349,12 @@
 {"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T06:27:22.505Z"}
 {"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T06:29:59.226Z"}
 {"accuracy":83,"correct":10,"interactions":12,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T06:29:59.292Z","totalCompleted":9}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T07:34:32.732Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T07:34:32.734Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T07:34:32.734Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T07:34:32.734Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T07:34:32.734Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T07:34:32.735Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T07:34:32.735Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T07:34:32.735Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T07:34:33.184Z"}
