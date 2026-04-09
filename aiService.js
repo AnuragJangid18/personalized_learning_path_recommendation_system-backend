@@ -1,8 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const pdfParsePackage = require('pdf-parse');
-// Handle version differences: 1.1.1 is a function, 2.4.5 is an object with PDFParse
-const pdfParse = typeof pdfParsePackage === 'function' ? pdfParsePackage : (pdfParsePackage.PDFParse || pdfParsePackage);
+const pdfParse = require('pdf-parse');
 const axios = require('axios');
 const { ChatPromptTemplate } = require('@langchain/core/prompts');
 const { StringOutputParser } = require('@langchain/core/output_parsers');
@@ -124,17 +122,7 @@ router.post('/upload', upload.single('document'), async (req, res) => {
     
     if (req.file) {
       if (req.file.mimetype === 'application/pdf') {
-        // Version 2.4.5 might be a class, so we check if it needs 'new' or just a call
-        let data;
-        if (typeof pdfParse === 'function') {
-          try {
-            data = await pdfParse(req.file.buffer);
-          } catch (e) {
-            // If it's a class constructor, try 'new'
-            const Parser = pdfParse;
-            data = await (new Parser()).parse(req.file.buffer);
-          }
-        }
+        const data = await pdfParse(req.file.buffer);
         text = data.text;
       } else {
         text = req.file.buffer.toString('utf-8');
@@ -183,16 +171,7 @@ router.post('/upload-url', express.json(), async (req, res) => {
     });
     const buffer = Buffer.from(response.data, 'binary');
 
-    let data;
-    if (typeof pdfParse === 'function') {
-      try {
-        data = await pdfParse(buffer);
-      } catch (e) {
-        // Fallback for class-based versions
-        const Parser = pdfParse;
-        data = await (new Parser()).parse(buffer);
-      }
-    }
+    const data = await pdfParse(buffer);
     const text = data.text;
 
     if (!text.trim()) {
