@@ -1,0 +1,351 @@
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-19T12:36:57.302Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-19T12:36:57.318Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-19T12:46:21.618Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-19T12:46:21.631Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-19T13:05:18.916Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-19T13:05:18.932Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-19T13:14:49.739Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-19T13:14:49.756Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-19T17:04:45.553Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-19T17:04:45.593Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-21T04:24:21.725Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-21T04:24:21.774Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T08:30:12.615Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T08:30:12.685Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T08:44:18.702Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T08:44:18.759Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T08:55:43.289Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T08:55:43.332Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T10:08:49.408Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T10:08:49.410Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T10:08:49.411Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T10:08:49.411Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T10:08:49.411Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T10:08:49.412Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T10:08:49.412Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T10:08:49.412Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T10:08:49.425Z"}
+{"level":"info","message":"Reset progress request received for studentId:","timestamp":"2025-11-24T10:09:14.075Z"}
+{"completed":23,"correct":42,"interactions":61,"level":"info","message":"Reset progress: before reset","timestamp":"2025-11-24T10:09:14.080Z"}
+{"completed":0,"correct":0,"interactions":0,"level":"info","message":"Reset progress: after reset","timestamp":"2025-11-24T10:09:14.095Z"}
+{"level":"info","message":"Reset progress request received for studentId:","timestamp":"2025-11-24T10:11:18.878Z"}
+{"completed":3,"correct":3,"interactions":3,"level":"info","message":"Reset progress: before reset","timestamp":"2025-11-24T10:11:18.880Z"}
+{"completed":0,"correct":0,"interactions":0,"level":"info","message":"Reset progress: after reset","timestamp":"2025-11-24T10:11:18.883Z"}
+{"level":"info","message":"Reset progress request received for studentId:","timestamp":"2025-11-24T10:33:52.413Z"}
+{"completed":4,"correct":8,"interactions":9,"level":"info","message":"Reset progress: before reset","timestamp":"2025-11-24T10:33:52.415Z"}
+{"completed":0,"correct":0,"interactions":0,"level":"info","message":"Reset progress: after reset","timestamp":"2025-11-24T10:33:52.417Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T15:34:51.605Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T15:34:51.610Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T15:34:51.610Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T15:34:51.611Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T15:34:51.612Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T15:34:51.612Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T15:34:51.613Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T15:34:51.613Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T15:34:51.688Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2025-11-24T15:35:08.239Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2025-11-24T15:36:13.425Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-24T15:36:18.844Z"}
+{"accuracy":89,"correct":8,"interactions":9,"level":"info","message":"Progress updated successfully","studentId":"691d8d70e5a37c94be301767","timestamp":"2025-11-24T15:36:18.852Z","totalCompleted":9}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-24T15:36:49.362Z"}
+{"accuracy":90,"correct":9,"interactions":10,"level":"info","message":"Progress updated successfully","studentId":"691d8d70e5a37c94be301767","timestamp":"2025-11-24T15:37:30.064Z","totalCompleted":9}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T16:19:34.911Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T16:19:34.915Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T16:19:34.915Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T16:19:34.916Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T16:19:34.916Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T16:19:34.916Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T16:19:34.917Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T16:19:34.917Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T16:19:34.966Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T16:21:04.765Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T16:21:04.769Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T16:21:04.769Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T16:21:04.770Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T16:21:04.770Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T16:21:04.771Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T16:21:04.772Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T16:21:04.772Z"}
+{"level":"info","message":"Mongo connected","timestamp":"2025-11-24T16:21:04.813Z"}
+{"level":"error","message":"(node:29804) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version\n(Use `node --trace-warnings ...` to show where the warning was created)","timestamp":"2025-11-24T18:25:05.297Z"}
+{"level":"error","message":"(node:29804) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version","timestamp":"2025-11-24T18:25:05.299Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T18:25:05.300Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T18:25:05.300Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T18:25:05.301Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T18:25:05.301Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T18:25:05.301Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T18:25:05.301Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T18:25:05.302Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T18:25:05.302Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2025-11-24T18:25:05.316Z"}
+{"level":"error","message":"(node:23896) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version\n(Use `node --trace-warnings ...` to show where the warning was created)","timestamp":"2025-11-24T18:26:36.434Z"}
+{"level":"error","message":"(node:23896) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version","timestamp":"2025-11-24T18:26:36.437Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-24T18:26:36.438Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-24T18:26:36.438Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-24T18:26:36.438Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-24T18:26:36.439Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-24T18:26:36.439Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-24T18:26:36.439Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-24T18:26:36.440Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-24T18:26:36.440Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2025-11-24T18:26:36.457Z"}
+{"dbStatus":"connected","level":"info","message":"Health check:","progressCount":21,"studentCount":21,"timestamp":"2025-11-24T18:26:54.110Z"}
+{"dbStatus":"connected","level":"info","message":"Health check:","progressCount":21,"studentCount":21,"timestamp":"2025-11-24T18:27:22.293Z"}
+{"level":"error","message":"(node:11652) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version\n(Use `node --trace-warnings ...` to show where the warning was created)","timestamp":"2025-11-25T10:37:57.915Z"}
+{"level":"error","message":"(node:11652) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version","timestamp":"2025-11-25T10:37:57.918Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-25T10:37:57.919Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-25T10:37:57.920Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-25T10:37:57.920Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-25T10:37:57.920Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-25T10:37:57.922Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-25T10:37:57.922Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-25T10:37:57.922Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-25T10:37:57.923Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2025-11-25T10:38:28.035Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:38:49.170Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-25T10:38:58.512Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-25T10:39:14.056Z"}
+{"level":"error","message":"profile error Operation `students.findOneAndUpdate()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOneAndUpdate()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:39:24.994Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:43:39.063Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:43:41.893Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:45:22.363Z"}
+{"level":"error","message":"(node:3980) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version\n(Use `node --trace-warnings ...` to show where the warning was created)","timestamp":"2025-11-25T10:45:40.182Z"}
+{"level":"error","message":"(node:3980) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version","timestamp":"2025-11-25T10:45:40.189Z"}
+{"level":"error","message":"Uncaught Exception: Error: listen EADDRINUSE: address already in use :::5000","timestamp":"2025-11-25T10:45:40.191Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-25T10:46:58.606Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-25T10:46:58.612Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-25T10:46:58.613Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-25T10:46:58.613Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-25T10:46:58.614Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-25T10:46:58.614Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-25T10:46:58.615Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-25T10:46:58.615Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2025-11-25T10:47:28.752Z"}
+{"level":"error","message":"profile error Operation `students.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:48:33.511Z"}
+{"level":"error","message":"Health check error: Operation `students.countDocuments()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.countDocuments()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-25T10:49:49.458Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-25T11:00:53.106Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-25T11:00:53.110Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-25T11:00:53.111Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-25T11:00:53.111Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-25T11:00:53.112Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-25T11:00:53.112Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-25T11:00:53.113Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-25T11:00:53.113Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2025-11-25T11:00:53.843Z"}
+{"level":"warn","message":"Get student: student not found","timestamp":"2025-11-25T11:01:08.018Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2025-11-25T11:02:23.659Z"}
+{"level":"info","message":"Progress not found, creating new document for studentId:","timestamp":"2025-11-25T11:02:23.740Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:03:04.529Z"}
+{"accuracy":100,"correct":1,"interactions":1,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:03:08.200Z","totalCompleted":0}
+{"accuracy":100,"correct":1,"courseName":"Introduction to AI","interactions":1,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:03:10.552Z","totalCompleted":1}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:03:41.193Z"}
+{"accuracy":100,"correct":2,"interactions":2,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:03:46.681Z","totalCompleted":1}
+{"accuracy":100,"correct":2,"courseName":"AI Ethics & Safety","interactions":2,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:14.411Z","totalCompleted":2}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:22.458Z"}
+{"accuracy":100,"correct":3,"interactions":3,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:27.374Z","totalCompleted":2}
+{"accuracy":100,"correct":3,"courseName":"Machine Learning Fundamentals","interactions":3,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:29.639Z","totalCompleted":3}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:32.338Z"}
+{"accuracy":100,"correct":4,"interactions":4,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:34.434Z","totalCompleted":3}
+{"accuracy":100,"correct":4,"courseName":"Neural Networks","interactions":4,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:36.623Z","totalCompleted":4}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:38.401Z"}
+{"accuracy":100,"correct":5,"interactions":5,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:40.838Z","totalCompleted":4}
+{"accuracy":100,"correct":5,"courseName":"Deep Learning","interactions":5,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:42.595Z","totalCompleted":5}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:44.246Z"}
+{"accuracy":100,"correct":6,"interactions":6,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:46.914Z","totalCompleted":5}
+{"accuracy":100,"correct":6,"courseName":"Reinforcement Learning","interactions":6,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:48.967Z","totalCompleted":6}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:50.896Z"}
+{"accuracy":86,"correct":6,"interactions":7,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:51.193Z","totalCompleted":6}
+{"accuracy":86,"correct":6,"courseName":"Computer Vision","interactions":7,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:04:56.080Z","totalCompleted":7}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:04:57.784Z"}
+{"accuracy":88,"correct":7,"interactions":8,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:05:22.914Z","totalCompleted":7}
+{"accuracy":88,"correct":7,"courseName":"Natural Language Processing","interactions":8,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:05:24.771Z","totalCompleted":8}
+{"level":"info","message":"Lesson request for:","timestamp":"2025-11-25T11:05:31.876Z"}
+{"accuracy":89,"correct":8,"interactions":9,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:05:40.402Z","totalCompleted":8}
+{"accuracy":89,"correct":8,"courseName":"Advanced ML Topics","interactions":9,"level":"info","message":"Progress updated successfully","studentId":"69258cbecf53f25ee3ace331","timestamp":"2025-11-25T11:05:42.060Z","totalCompleted":9}
+{"level":"info","message":"Reset progress request received for studentId:","timestamp":"2025-11-25T11:06:24.813Z"}
+{"completed":9,"correct":8,"interactions":9,"level":"info","message":"Reset progress: before reset","timestamp":"2025-11-25T11:06:24.848Z"}
+{"completed":0,"correct":0,"interactions":0,"level":"info","message":"Reset progress: after reset","timestamp":"2025-11-25T11:06:24.897Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2025-11-25T11:06:49.263Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2025-11-28T07:24:38.842Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2025-11-28T07:24:38.857Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2025-11-28T07:24:38.858Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2025-11-28T07:24:38.859Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2025-11-28T07:24:38.860Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2025-11-28T07:24:38.860Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2025-11-28T07:24:38.861Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2025-11-28T07:24:38.862Z"}
+{"level":"error","message":"MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.anuragapi.lqyfynk.mongodb.net","timestamp":"2025-11-28T07:24:38.870Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:24:59.590Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:25:19.928Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:25:43.865Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:25:59.112Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:26:45.963Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:27:06.076Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:27:08.555Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:27:26.484Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:27:45.449Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:28:00.696Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:28:15.840Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:28:32.767Z"}
+{"level":"error","message":"auth error MongooseError: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2025-11-28T07:28:36.448Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:29:00.834Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:29:15.778Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:29:28.041Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:30:02.085Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:30:16.299Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T07:30:56.792Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T08:06:01.357Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T08:06:15.934Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T08:06:36.341Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T08:11:41.760Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2025-11-28T08:12:05.311Z"}
+{"level":"error","message":"Uncaught Exception: Error: Cannot find module 'langchain/vectorstores/memory'\nRequire stack:\n- C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\aiService.js\n- C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\server.js","timestamp":"2026-04-09T03:04:06.227Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:04:06.583Z"}
+{"level":"error","message":"Uncaught Exception: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './vectorstores/memory' is not defined by \"exports\" in C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\langchain\\package.json","timestamp":"2026-04-09T03:10:02.207Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:10:02.537Z"}
+{"level":"error","message":"Uncaught Exception: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './text_splitter' is not defined by \"exports\" in C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\langchain\\package.json","timestamp":"2026-04-09T03:12:23.039Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:12:23.389Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T03:13:11.937Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T03:13:11.939Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T03:13:11.939Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T03:13:11.940Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T03:13:11.940Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T03:13:11.940Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T03:13:11.940Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T03:13:11.940Z"}
+{"level":"error","message":"Health check error: Operation `students.countDocuments()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.countDocuments()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2026-04-09T03:13:33.098Z"}
+{"level":"error","message":"MongoDB connection error: MongoNetworkError: connect ETIMEDOUT 159.41.185.49:27017","timestamp":"2026-04-09T03:13:33.129Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T03:16:03.615Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T03:16:03.617Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T03:16:03.617Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T03:16:03.618Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T03:16:03.618Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T03:16:03.618Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T03:16:03.618Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T03:16:03.619Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:16:03.972Z"}
+{"dbStatus":"connected","level":"info","message":"Health check:","progressCount":13,"studentCount":13,"timestamp":"2026-04-09T03:16:13.968Z"}
+{"level":"error","message":"Uncaught Exception: Error: listen EADDRINUSE: address already in use :::5000","timestamp":"2026-04-09T03:20:00.586Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:20:00.937Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:21:38.085Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T03:21:52.613Z"}
+{"accuracy":91,"correct":10,"interactions":11,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T03:21:52.682Z","totalCompleted":9}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T03:22:07.257Z"}
+{"accuracy":91,"correct":10,"interactions":11,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T03:22:07.315Z","totalCompleted":9}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:25:46.389Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:26:15.380Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:26:30.365Z"}
+{"level":"error","message":"Extraction Error: TypeError: pdfParse is not a function","timestamp":"2026-04-09T03:26:57.855Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T03:33:24.410Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T03:33:24.413Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T03:33:24.413Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T03:33:24.413Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T03:33:24.413Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T03:33:24.414Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T03:33:24.414Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T03:33:24.414Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:33:46.307Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T03:43:12.269Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T03:43:12.272Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T03:43:12.272Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T03:43:12.273Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T03:43:12.273Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T03:43:12.273Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T03:43:12.274Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T03:43:12.274Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:43:12.610Z"}
+{"level":"error","message":"Uncaught Exception: Error: listen EADDRINUSE: address already in use :::5000","timestamp":"2026-04-09T03:44:43.150Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T03:44:43.474Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:44:48.157Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T03:54:39.071Z"}
+{"accuracy":91,"correct":10,"interactions":11,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T03:54:39.132Z","totalCompleted":9}
+{"accuracy":83,"correct":10,"interactions":12,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T03:54:46.621Z","totalCompleted":9}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T03:56:55.858Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T03:57:03.667Z"}
+{"accuracy":83,"correct":10,"interactions":12,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T03:57:03.719Z","totalCompleted":9}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T04:40:14.018Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T04:53:32.210Z"}
+{"accuracy":83,"correct":10,"interactions":12,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T04:53:32.265Z","totalCompleted":9}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:03:29.154Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:03:29.156Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:03:29.156Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:03:29.156Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:03:29.156Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:03:29.156Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:03:29.157Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:03:29.157Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:03:29.514Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:03:38.707Z"}
+{"level":"error","message":"Uncaught Exception: SyntaxError: Invalid or unexpected token","timestamp":"2026-04-09T05:20:16.716Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:20:17.429Z"}
+{"level":"error","message":"Uncaught Exception: Error: listen EADDRINUSE: address already in use :::5000","timestamp":"2026-04-09T05:20:49.684Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:21:11.609Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:23:57.022Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:23:57.023Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:23:57.024Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:23:57.411Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:24:04.274Z"}
+{"level":"error","message":"Search Papers Error: Request failed with status code 429","timestamp":"2026-04-09T05:24:37.587Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:27:16.221Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:27:16.223Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:27:16.223Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:27:16.223Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:27:16.223Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:27:16.223Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:27:16.224Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:27:16.224Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:27:16.541Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:27:30.134Z"}
+{"level":"error","message":"Search Papers Error: Request failed with status code 400","timestamp":"2026-04-09T05:27:34.407Z"}
+{"level":"error","message":"Chat Error: TypeError: ChatGoogleGenAI is not a constructor","timestamp":"2026-04-09T05:27:46.301Z"}
+{"level":"error","message":"Search Papers Error: Request failed with status code 400","timestamp":"2026-04-09T05:28:00.976Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:32:41.461Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:32:41.463Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:32:41.463Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:32:41.464Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:32:41.464Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:32:41.464Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:32:41.464Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:32:41.464Z"}
+{"level":"error","message":"Chat Error: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","timestamp":"2026-04-09T05:32:52.982Z"}
+{"level":"error","message":"get student error Operation `students.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `students.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)","timestamp":"2026-04-09T05:32:54.606Z"}
+{"level":"error","message":"MongoDB connection error: MongoNetworkError: connect ETIMEDOUT 159.41.185.49:27017","timestamp":"2026-04-09T05:33:02.715Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:38:53.356Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:38:53.357Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:38:53.358Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:38:53.686Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:38:57.648Z"}
+{"level":"error","message":"Upload URL Error: Request failed with status code 403","timestamp":"2026-04-09T05:42:28.275Z"}
+{"level":"error","message":"Upload URL Error: Request failed with status code 403","timestamp":"2026-04-09T05:42:58.473Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:49:02.460Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:49:03.093Z"}
+{"level":"info","message":"API listening on :5000","timestamp":"2026-04-09T05:49:59.302Z"}
+{"level":"info","message":"Available endpoints:","timestamp":"2026-04-09T05:49:59.305Z"}
+{"level":"info","message":"  - POST /api/progress/reset - Reset student progress","timestamp":"2026-04-09T05:49:59.305Z"}
+{"level":"info","message":"  - GET  /api/progress/:studentId - Get student progress","timestamp":"2026-04-09T05:49:59.306Z"}
+{"level":"info","message":"  - POST /api/progress - Update student progress","timestamp":"2026-04-09T05:49:59.306Z"}
+{"level":"info","message":"  - GET  /api/dashboard/:studentId - Get dashboard data","timestamp":"2026-04-09T05:49:59.306Z"}
+{"level":"info","message":"  - POST /api/profile - Create/update student profile","timestamp":"2026-04-09T05:49:59.306Z"}
+{"level":"info","message":"  - GET  /api/learning-path/recommended - Get RL-based recommended path","timestamp":"2026-04-09T05:49:59.306Z"}
+{"level":"info","message":"MongoDB Cloud connected successfully","timestamp":"2026-04-09T05:49:59.673Z"}
+{"beforeHandshake":false,"cause":{"address":"159.41.185.49","code":"ETIMEDOUT","errno":-4039,"port":27017,"syscall":"connect"},"connectionGeneration":5,"errorLabelSet":{},"level":"error","message":"get student error connect ETIMEDOUT 159.41.185.49:27017","stack":"MongoNetworkError: connect ETIMEDOUT 159.41.185.49:27017\n    at TLSSocket.<anonymous> (C:\\Users\\anura\\Desktop\\project\\mini-project\\backend\\node_modules\\mongodb\\lib\\cmap\\connect.js:286:44)\n    at Object.onceWrapper (node:events:639:26)\n    at TLSSocket.emit (node:events:524:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2026-04-09T05:51:11.298Z"}
+{"level":"info","message":"Warning: TT: undefined function: 32","timestamp":"2026-04-09T05:51:17.806Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:57:21.693Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T05:57:22.089Z"}
+{"level":"info","message":"Warning: TT: undefined function: 32","timestamp":"2026-04-09T05:58:43.578Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T06:06:46.372Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T06:15:24.076Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T06:25:29.381Z"}
+{"level":"info","message":"Student retrieved:","timestamp":"2026-04-09T06:27:22.505Z"}
+{"level":"info","message":"Lesson request for:","timestamp":"2026-04-09T06:29:59.226Z"}
+{"accuracy":83,"correct":10,"interactions":12,"level":"info","message":"Progress updated successfully","studentId":"6925a09c17dc5c5f375baffc","timestamp":"2026-04-09T06:29:59.292Z","totalCompleted":9}

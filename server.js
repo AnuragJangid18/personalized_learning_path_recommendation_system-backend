@@ -637,6 +637,10 @@ app.get('/api/health', async (req, res) => {
   }
 });
 
+// Import AI service module
+const aiRoutes = require('./aiService');
+app.use('/api/ai', aiRoutes);
+
 app.get('/api/subjects', (req, res) => {
   const subjects = Object.keys(courseData);
   const counts = subjects.reduce((acc, s) => ((acc[s] = courseData[s].length), acc), {});
