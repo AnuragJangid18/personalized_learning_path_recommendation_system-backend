@@ -163,7 +163,12 @@ router.post('/upload-url', express.json(), async (req, res) => {
     }
 
     // Download PDF from URL to buffer
-    const response = await axios.get(pdfUrl, { responseType: 'arraybuffer' });
+    const response = await axios.get(pdfUrl, { 
+      responseType: 'arraybuffer',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+      }
+    });
     const buffer = Buffer.from(response.data, 'binary');
 
     const data = await pdfParse(buffer);
